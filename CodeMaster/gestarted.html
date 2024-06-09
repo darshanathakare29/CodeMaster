@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligned Videos Example</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .video-container {
+            width: 45%;
+            /* Adjust the width as needed */
+            margin: 20px;
+        }
+
+        video {
+            width: 100%;
+            height: auto;
+        }
+
+        .description {
+            font-size: 16px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        @media (min-width: 768px) {
+            .videos-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .video-container {
+                width: 30%;
+                /* Adjust the width as needed */
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: rgb(196, 185, 174);">
+    <div class="videos-wrapper">
+        <div class="video-container">
+            <video controls>
+                <source src="videos/17 July Spring.mp4" type="video/mp4">
+            </video>
+            <div class="description">Day 1</div>
+        </div>
+        <div class="video-container">
+            <video controls>
+                <source src="videos/2023-07-14 20-07-20(1)spring.mp4" type="video/mp4">
+            </video>
+            <div class="description">Day 2</div>
+</body>
+
+</html>
